@@ -1,19 +1,21 @@
 class Solution:
     def isValid(self, s: str) -> bool:
-        hasmap = {')' : '(', ']' : '[', '}' : '{'}
-        stack = []
-        for st in s : 
-            if st in ['(', '[', '{'] : 
-                stack.append(st)
-            elif stack : 
-                item = stack.pop()
-                if item != hasmap[st]  : 
+        closed = {')':'(', ']':'[', '}':'{'}
+        open = {'(':'(','[':'[', '{':'{'}
+
+        res = []
+        for i in s:
+            if i in open:
+                res.append(i)
+            elif res:
+                item = res.pop()
+                if item != closed[i]: 
                     return False
             else : 
                 return False
         
-        if not stack : 
+        if not res: 
             return True
-        else : 
+        else: 
             return False
 
