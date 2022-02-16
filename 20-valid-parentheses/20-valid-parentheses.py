@@ -11,7 +11,7 @@ class Solution:
                 item = res.pop()
                 if item != closed[i]: 
                     return False
-            else : 
+            else: 
                 return False
         
         if not res: 
