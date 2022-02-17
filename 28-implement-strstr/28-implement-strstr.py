@@ -4,8 +4,8 @@ class Solution:
             return 0
         if not haystack:
             return -1
-        if not needle:
-            return 0
+        #if not needle:
+         #   return 0
         if needle not in haystack:
             return -1
         if needle in haystack:
