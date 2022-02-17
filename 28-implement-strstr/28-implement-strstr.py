@@ -6,4 +6,8 @@ class Solution:
             return -1
         if not needle:
             return 0
-        return haystack.find(needle)
+        if needle not in haystack:
+            return -1
+        if needle in haystack:
+            return haystack.index(needle)
+        #return haystack.find(needle)
