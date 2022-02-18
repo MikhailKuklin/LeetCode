@@ -3,7 +3,8 @@ class Solution:
         for i in nums:
             if i == target:
                 return nums.index(i)
-            if target not in nums:
+            else:
+#            if target not in nums:
                 if target > nums[-1]:
                     diff = target - nums[-1]
                     il = nums.index(nums[-1])
