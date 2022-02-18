@@ -8,8 +8,6 @@ class Solution:
                     il = nums.index(nums[-1])
                     hp = il+1
                     return hp
-#                elif i < target:
- #                   continue
                 elif i > target:
                     ip = nums.index(i)
                     hip = ip
