@@ -5,7 +5,6 @@ class Solution:
                 return nums.index(i)
             else:
                 if target > nums[-1]:
-                    diff = target - nums[-1]
                     il = nums.index(nums[-1])
                     hp = il+1
                     return hp
