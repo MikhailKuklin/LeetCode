@@ -10,6 +10,3 @@ class Solution:
             result = i * i
      
         return i - 1
-#        ns = str(n)
- #       f=ns.split('.')
-  #      return int(f[0])
