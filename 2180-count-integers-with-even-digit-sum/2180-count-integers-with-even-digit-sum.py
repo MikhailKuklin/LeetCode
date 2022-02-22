@@ -2,7 +2,6 @@ class Solution:
     def countEven(self, num: int) -> int:
         count = 0
         while num > 0:
-            print(num)
             if num < 10:
                 if (num % 2) == 0:
                     count += 1
