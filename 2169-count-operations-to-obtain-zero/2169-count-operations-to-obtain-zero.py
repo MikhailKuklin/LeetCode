@@ -3,10 +3,10 @@ class Solution:
         count = 0
         if num1 is num2 and num1 is 0 and num2 is 0:
             return 0
-        elif num1 == num2:
+        elif num1 is num2:
             return 1
         while num2 > 0:
-            if num1 == 0:
+            if num1 is 0:
                 break
             elif num1 >= num2:
                 num1 -= num2
