@@ -1,10 +1,9 @@
 class Solution:
     def countOperations(self, num1: int, num2: int) -> int:
-        while num1 is num2:
-                if num1 is 0 and num2 is 0:
-                    return 0
-                else:
-                    return 1
+        if num1 is num2 and num1 is 0 and num2 is 0:
+            return 0
+        elif num1 is num2:
+            return 1
         count = 0
         while num2 > 0:
             if num1 is 0:
