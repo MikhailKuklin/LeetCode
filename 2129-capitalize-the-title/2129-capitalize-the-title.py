@@ -1,7 +1,6 @@
 class Solution:
     def capitalizeTitle(self, title: str) -> str:
         n = title.lower()
-
         nl = n.split(' ')
 
         fs = ""
