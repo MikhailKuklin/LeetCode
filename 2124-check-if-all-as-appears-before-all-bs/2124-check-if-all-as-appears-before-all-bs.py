@@ -5,9 +5,9 @@ class Solution:
         elif 'b' not in s:
             return True
         else:
-            an = s.count("a")
-            bn = s.count("b")
-            if an == bn and len(s) == 2:
+            #an = s.count("a")
+            #bn = s.count("b")
+            if len(s) == 2:
                 if s[0] == 'a':
                     return True
             else:
